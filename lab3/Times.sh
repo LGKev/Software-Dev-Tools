@@ -8,10 +8,18 @@
 
 file="/home/kkuwata/Documents/DevTools/lab3/AthleteTimes.txt"
 
-while IFS=: read -r line
+regExMatch="([ ][0-9]{3,4})"
+
+while IFS=" " read -r fieldA fieldB fieldC fieldD fieldE fieldF
 do
-	printf '%s \n' "$line"
-	printf 'decimal %d \n' "$f0"
+	printf 'a: %s ' "$fieldA"
+	printf 'b: %s ' "$fieldB"
+	printf 'c: %s ' "$fieldC"
+	printf 'd: %s ' "$fieldD"
+	printf 'e: %s ' "$fieldE"
+	printf 'f: %s \n' "$fieldF"
+
+
 done < "$file"
 
 
