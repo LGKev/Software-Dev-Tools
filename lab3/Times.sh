@@ -9,7 +9,7 @@
 file="/home/kkuwata/Documents/DevTools/lab3/AthleteTimes.txt"
 
 touch "tmp.txt"
-touch "final.txt"
+touch "sorted_avg.txt"
 
 while IFS=" " read -r ID First Last time1 time2 time3 
 do
@@ -36,9 +36,9 @@ done < "$file"
 print "before sort"
 cat "tmp.txt"
 
-print "========================== \n"
+printf "========================== \n"
 
-sort -o "final.txt" "tmp.txt" -k3,3d -k4
-cat "final.txt"
+sort -o "sorted_avg.txt" "tmp.txt" -k3,3d -k4
+cat "sorted_avg.txt"
 
 rm "tmp.txt"
