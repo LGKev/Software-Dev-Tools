@@ -1,0 +1,116 @@
+Kevin Kuwata
+9/13/18
+Section 103
+CS3308
+
+Did not attend designated lab section 103 because of Apple Interviews. 
+
+
+
+Question 1:
+	> means the difference of the 2nd file.
+	< means the differences of the 1st file.
+
+	-c for context, ouput 3 lines of copied context
+
+
+===========================================================
+		GREP
+===========================================================
+
+Step 2a:
+	grep -w -i -n "pigeon" scene1_v1.txt
+	-w word match
+	-i ignore case
+	-n line number
+	"what were looking for"
+	file: scene1_v1.txt
+
+
+Step2b:
+	diff scene1_v*.txt | grep -n ">"
+	">" because we want the things that are different in file 1
+
+===========================================================
+		CUT
+===========================================================
+Step3a:
+	cut -d':' -f1 -s
+	-d delimeter
+	-f1 is field 1
+	-s if not deliminated, don't include
+	
+Step3b:
+	only show deliminated lines that are different
+	pipe a dif, then deliminate? still show character speaking.
+
+	diff scene1_v*.txt | grep ">" | cut -d':' -f1 -s
+	print out the lines that differ 
+	only show :
+
+
+===========================================================
+		Unique
+===========================================================
+Step4a:
+	uniq scen1_v1.txt -d 
+	
+	-d shows only duplicate lines
+
+Step4b:
+	diff scene1*.txt | uniq -u 
+
+	???? can you help me on this in a reply on moodle? I wasn't sure
+
+
+
+===========================================================
+		AWK & SED
+===========================================================
+Step5a:
+	n/a
+
+Step5b:
+	sed 's/4/a/g; s/7/t/g; s/0/o/g; s/1/i/g;  s/3/e/g; s/5/s/g' cryptic.txt
+
+in a script
+
+
+===========================================================
+		RegEx
+===========================================================
+Step6a:
+	grep -E '[0-9][0-9][0-9]-' -c  regex_practice_data.txt
+	count = 770
+
+
+Step6b:
+	grep -E '[3][0][3]-[4][4][1]' -c  regex_practice_data.txt
+	count = 51
+
+
+===========================================================
+		AWK
+===========================================================
+Step 7a:
+
+
+	awk 'BEGIN{count=0; SUM_NP=0;  SUM_NS =0; SUM_NC=0;} {SUM_NP+=$3; SUM_NS+=$4; SUM_NC+=$5; count++;}END{print "AVG_Pep " SUM_NP/count; print "AVG_Saussage: " SUM_NS/count; print "AVG__Cheese " SUM_NC/count}' pizzaOrders.txt
+	AVG_Pep 1.6
+	AVG_Saussage: 1.4
+	AVG__Cheese 1.8
+
+
+awk 'BEGIN{count=0; SUM_TOTAL=0; SUM_NC=0;} {SUM_NC+=$5; SUM_TOTAL+=$6 count++;}END{print "Percentage Cheese " SUM_NC/(SUM_TOTAL)*1000 "%"}' pizzaOrders.txt
+Percentage Cheese 69.6303%
+
+
+I really hope I interpreted that last question correctly.
+
+
+
+
+
+
+
+

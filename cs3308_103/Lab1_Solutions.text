@@ -1,0 +1,143 @@
+Question 3.
+	unzip Lab1\ Materials.zip -d ../Kkuwata/DevTools/CS3308_103/.
+
+Question 4.
+	used ls -a for showing hiden files. There is a cat in .secrets.txt
+	drwxrwxr-x 52 kkuwata kkuwata 4.0K Aug 30 10:47 emptyFolders
+	drwxrwxr-x  2 kkuwata kkuwata 4.0K Sep  3 13:04 images
+	-rw-rw-r--  1 kkuwata kkuwata  68K Aug 30 10:47 little1.zip
+	-rw-rw-r--  1 kkuwata kkuwata  68K Aug 30 10:47 little2.zip
+	-rw-rw-r--  1 kkuwata kkuwata  126 Aug 30 10:47 .secrets.txt
+	drwxrwxr-x  2 kkuwata kkuwata 4.0K Sep  3 13:27 textFiles
+
+
+
+Question 5.
+	pwd:/home/kkuwata/Documents/DevTools/cs3308_103/Lab Materials
+ 
+	command:
+		ll -S 
+
+	Largest file: fightingRalphie.png
+	-rw-rw-r-- 1 kkuwata kkuwata 4.0M Sep  3 13:06 fightingRalphie.png
+	-rw-rw-r-- 1 kkuwata kkuwata 481K Sep  3 13:06 bronzeRalphie.png
+	-rw-rw-r-- 1 kkuwata kkuwata 109K Sep  3 12:23 majesticRalphie.png
+
+ I used the ll -S for the sorting, and then used my eyes to see which one was the biggest.
+
+
+Quesiton 6.
+	mkdir tinyData
+	cp Lab\ Materials/images/majesticRalphie.png tinyData/.
+	cp Lab\ Materials/textFiles/aliceinwonderland.txt tinyData/.
+
+Question 7.
+	zip -r tinyData.zip ./tinyData	
+	
+	tinyData had 280k bytes and then after being zipped
+	tinyData had 169k bytes
+
+Question 8.
+	tar -vcf tinyData.tar ./tinyData
+	tinyData before was 280k bytes
+	tinyData.tar is still 280k bytes
+	
+	options:
+	-v verbose so i can see it doing stuff/ looks cool
+	-c for create
+	-f for file	
+
+that makes sense. we didn't do any compression
+
+Question 9.
+	rm -rf tinyData.zip 
+	rm -rf tinyData
+
+Question 10.
+	tar -vxf tinyData.tar
+	options: 
+	-v verbose
+	-x extract the files
+	-f the file name of the tar
+
+Question 11.
+	littleZip1.zip and littleZip2.zip
+	they look like they have the same size
+	Vim actually let me look inside the zip file without unzipping
+	vimdiff worked too
+	
+	with vimdiff I could see that littlezip1.zip has fiona.jpg and alicewonderland.txt
+	then in littlezip2.zip its a zip of littlezip1 directory. 
+
+	littlezip2 is a zip of littlezip1 directory
+
+Question 12.
+	found target.txt with 
+	find . -name "target.txt" 
+	
+	the (.) dot is the current directory to search from. If I was really lost I could go from the home directory.	
+
+	relative to Lab\ Materials directory:
+		./emptyFolders/13/target.txt
+	pwd:
+	/home/kkuwata/Documents/DevTools/cs3308_103/Lab Materials/emptyFolders/13
+
+Question 13.
+	vim MyShortStory
+		:wq
+	head -n 5 dubliners.txt >> MyShortStory
+	tail -n 5 theladywiththedog.txt >> MyShortStory
+
+
+	>> appends to a file
+	-n is the number of lines to include
+	vim MyShortStory creates the file
+
+
+
+
+=========================================================================
+=========================================================================
+	Step 5.
+=========================================================================
+=========================================================================
+question 1.
+	sort --key=1 password_demo.txt
+
+question 2.
+	sort --numeric-sort --key=4 password_demo.txt
+
+question 3.
+	grep -i "system*" password_demo.txt
+
+question 4.
+	wc -w password_demo.txt
+
+Question 5.
+	only unique user id
+	sort -u --key=1 password_demo.txt
+	but my UUID were all unique anyway
+	42 lines both times
+	also checked by writing to a file and looking at the line count. they were identical 
+
+	
+
+Question 6. 
+	sort -u --key=1 password_demo.txt > tmp
+
+question 7.
+	vim getUniqueGID.sh
+	chmod +x getUniqueGID.sh
+to run it
+	./getUniqueGID.sh
+
+chmod the file +x to make executable
+		
+
+
+
+	
+
+
+
+
