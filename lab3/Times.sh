@@ -38,6 +38,7 @@ cat "tmp.txt"
 
 printf "========================== \n"
 
+# this sorting was key, k3,3d is start sort at field 3 (3rd column) then do a sort on 4th field if field 3 are equal
 sort -o "sorted_avg.txt" "tmp.txt" -k3,3d -k4
 cat "sorted_avg.txt"
 
