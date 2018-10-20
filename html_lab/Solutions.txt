@@ -1,0 +1,55 @@
+Kevin Kuwata
+HTML Lab
+
+1. #div {
+	background: red
+	}
+
+
+2. change in the marigin does: places spacing around the division object
+	change in padding does: changes the size of the division. 
+
+3. to change the paragraph element background of div1:
+	#div1 p {
+		background: yellow;
+		padding: 100px;
+		margin: 100px;
+	} 
+	if you make padding over 100px, we are bigger than the box width of 100px. 
+	if margin is bigger than 100px, we come outside of the range of the original box. 
+
+4. 
+	with the overflow allowed for div1, we get a scroll or hidden. with scroll the the yellow box is  constrained within the div boarder, but allows you to see the entire yellow box. for hidden, whatever falls outside of the original division boarder, gets clipped.
+
+5. with float: left we have:
+	1	2	3; from the left hand side
+	with float: right.
+	3 	2 	1; from the rigt hand side 
+
+6. giving the float: left with clear: right we get the original order:
+	1 	2	3;
+
+
+7. to get the layout do the following:
+#div1 {
+	float: left;
+	clear: left;
+}
+
+#div2 {
+	float: left;
+	clear: right;
+}
+
+#div3 {
+	float:  left;
+	clear: left;} 
+
+
+8. it looks like the default body margin is 8px. when you go to 0px the body moves back.
+
+ 
+
+
+
+

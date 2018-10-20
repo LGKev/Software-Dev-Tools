@@ -1,0 +1,85 @@
+/* the css rules for menu.html */
+
+
+#top-menu {
+    border: 2px solid black;
+    height: 40px;
+    width: 20%;
+    background: blue;
+    float: left;
+}
+
+#info {
+    border: 2px solid red;
+    height: 20px;
+    width: 20%;
+    background: green;
+    float: left;
+    clear: right;
+}
+
+
+
+#sub-menu1{
+	margin-top: 5px;
+	margin-bottom: : 5px;
+	margin-right: 5px;
+	  padding: 10px;
+	  border: 2px black;
+  }
+#sub-menu2{
+	margin-top: 5px;
+	margin-bottom: : 5px;
+	margin-right: 5px;
+	  padding: 10px;
+	  border: 2px black;
+  }
+
+#sub-menu3{
+	margin-top: 5px;
+	margin-bottom: : 5px;
+	margin-right: 5px;
+	  padding: 10px;
+	  border: 2px black;
+  }
+
+#sub-menu4{
+	margin-top: 5px;
+	margin-bottom: : 5px;
+	margin-right: 5px;
+	  padding: 10px;
+	  border: 2px black;
+  }
+
+
+
+/*
+#div1{
+	background: red;
+	margin: 100px;
+	padding: 100px;
+}
+
+#div1 p{
+	background: yellow;
+	padding: 100px;
+	margin: 100px;
+}
+*/
+
+/*
+#div1 {
+	float: left;
+	clear: right;
+}
+
+#div2 {
+	float: left;
+	clear: right;
+}
+
+#div3 {
+	float: left;
+	clear: right;
+}
+*/
