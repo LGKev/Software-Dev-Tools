@@ -1,0 +1,45 @@
+Kevin Kuwata Solutions
+Hw2: Part 2 Bootstrap Grid System
+
+/*Question 1*/
+1: What are the thigns needed for Boostrap to be Loaded?
+A: looks like jQuery, then Popper, then finally Bootstrap 
+
+
+/*Question 2*/
+How does Boostrap's Grid System work.
+A: I don't know HOW it works, but what it does. IT splits the page into columns and rows. Makes a grid of the displayed page.
+	Each of the data entry points of this grid can hold different styles by being in a container. 
+
+
+/*Question 1*/
+1: What are the thigns needed for Boostrap to be Loaded?
+A: 
+
+
+/*Question 1*/
+1: What are the thigns needed for Boostrap to be Loaded?
+A: 
+
+
+/*Question 1*/
+1: What are the thigns needed for Boostrap to be Loaded?
+A: 
+
+
+/*Question 1*/
+1: What are the thigns needed for Boostrap to be Loaded?
+A: 
+
+
+/*Question 1*/
+1: What are the thigns needed for Boostrap to be Loaded?
+A: 
+
+
+/*Question 1*/
+1: What are the thigns needed for Boostrap to be Loaded?
+A: 
+
+
+
