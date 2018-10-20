@@ -1,0 +1,37 @@
+.row {
+	margin:auto;
+	text-align:center;
+	color:white;
+}
+
+h1 {
+	text-align:center;
+}
+
+.textBox{
+	
+}
+
+label {
+	font-weight: bold;
+}
+
+#aboutMe {
+	font-weight:normal;
+}
+
+p{
+	font-weight:bold;	
+}
+
+
+textarea{
+	resize: vertical; 
+	resize: horizontal;
+	width:100%;
+}
+
+button{
+	text-align:center;
+	color:green;
+}
